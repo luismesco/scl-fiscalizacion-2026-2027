@@ -21,3 +21,11 @@ Los pictogramas identifican las secciones y los módulos. El comparador muestra 
 El visor PDF permite seleccionar documento, página, ampliación y giro, buscar texto, abrir el archivo y descargarlo. La lectura de texto y la consulta de hojas se mantienen disponibles. Los PDF y las capturas se incorporan como archivos vinculados de esta página; los documentos se cargan al solicitarlos.
 
 El visor utiliza PDF.js, distribuido bajo Apache License 2.0; se incluye su licencia en `assets/pdfjs/LICENSE`.
+
+## Cobertura del comparador
+
+El índice contiene 61 temas, cubre los 16 apartados del manual y distingue correspondencias documentadas, parciales y diferencias de ámbito. Cada tema incluye análisis y capturas de sus fuentes; los casos sin desarrollo equivalente se identifican expresamente.
+
+La comparación contable abarca los 1,837 códigos de la unión de los dos catálogos y muestra las fichas disponibles en cada versión. La ausencia de un código en un catálogo no se presenta como derogación.
+
+Las guías se consultan completas: 361 filas de operaciones en el adjunto y 496 en el antecedente. La localización por concepto textual es una ayuda de consulta; no certifica equivalencia contable. Se conservan las numeraciones repetidas de las fuentes. Todas las vistas tienen búsqueda y paginación.

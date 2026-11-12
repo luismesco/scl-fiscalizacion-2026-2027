@@ -1,6 +1,6 @@
 'use strict';
 const MEDIA=window.SCL_MEDIA;
-const PDF_TITLES={'lgipe':'Ley General de Instituciones y Procedimientos Electorales','lgpp':'Ley General de Partidos Políticos','sif-manual-acuerdo':'Acuerdo CF/017/2017 · Manual del SIF','sif-manual':'Manual de Usuario SIF v4.0','sif-plan':'Plan de Contingencia SIF v4.0','sif-catalogo':'Catálogo de cuentas · CF/011/2024','sif-contable':'Acuerdo CF/011/2024'};
+const PDF_TITLES={'sif-instructivo':'Instructivo de cuentas · CF/011/2024','sif-guia':'Guía contabilizadora · CF/011/2024','sif-clasificador':'Clasificador por objeto del gasto · CF/011/2024','lgipe':'Ley General de Instituciones y Procedimientos Electorales','lgpp':'Ley General de Partidos Políticos','sif-manual-acuerdo':'Acuerdo CF/017/2017 · Manual del SIF','sif-manual':'Manual de Usuario SIF v4.0','sif-plan':'Plan de Contingencia SIF v4.0','sif-catalogo':'Catálogo de cuentas · CF/011/2024','sif-contable':'Acuerdo CF/011/2024'};
 const originalOpenDoc=openDoc;
 let pdfLibrary=null,pdfDocument=null,pdfLoading=null,pdfRenderTask=null,pdfGeneration=0,pdfPageNumber=1,pdfRotation=0,pdfZoom='fit',pdfCurrentId=null,pdfSearchResults=[],pdfSearchRun=0,pdfDraw=0;
 function pdfInfo(id){const m=MEDIA.pdfs[id];return m?{...m,id,title:D.docs.find(d=>d.id===id)?.title||PDF_TITLES[id]||id}:null}
