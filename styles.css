@@ -77,3 +77,5 @@ body:not([data-section]) main section:not(#panorama){display:none}
 @keyframes morenai-draw{0%{stroke-dashoffset:100}40%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:100}}
 @keyframes morenai-blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
 @media(prefers-reduced-motion:reduce){.morenai-picto.active .picto-lens,.morenai-picto.active .picto-spark,.morenai-picto.active .picto-page,.morenai-picto.active .picto-dot,.morenai-clarification-title .picto-check,.morenai-passages-title .picto-eye{animation:none}.morenai-clarification-title .picto-check{stroke-dashoffset:0}}
+/* MorenAI: sello de versión visible (2026-11-12) */
+.morenai-version{font-size:.62rem;color:var(--muted);margin-left:.4rem}
