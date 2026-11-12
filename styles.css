@@ -51,3 +51,29 @@ body:not([data-section]) main section:not(#panorama){display:none}
 .morenai-clarification-options{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
 .morenai-clarify-option{border:1px solid var(--wine);background:var(--white);color:var(--wine);padding:.6rem .8rem;border-radius:.5rem;font-size:.78rem;font-weight:600;min-height:38px}
 .morenai-clarification-hint{font-size:.72rem!important;color:var(--muted);margin-top:.7rem}
+/* MorenAI: pictogramas SVG animados (2026-11-12) — mismo lenguaje que el pulso: vino y dorado, ritmo 1.25s */
+.morenai-pictos{display:flex;gap:1rem;justify-content:center;margin:.3rem 0 .7rem}
+.morenai-picto{margin:0;text-align:center;width:64px;color:var(--muted);opacity:.45;transition:opacity .4s,color .4s}
+.morenai-picto.active{color:var(--wine);opacity:1}
+.morenai-picto.active .picto-gold{stroke:var(--gold)}
+.morenai-picto-svg{width:52px;height:52px;display:block;margin:0 auto}
+.morenai-picto figcaption{font-size:.65rem;color:var(--muted);margin-top:.35rem}
+.morenai-picto.active figcaption{color:var(--wine);font-weight:700}
+.morenai-picto.active .picto-lens{animation:morenai-sweep 2.4s ease-in-out infinite}
+.morenai-picto.active .picto-spark{animation:morenai-dot 1.25s ease-in-out infinite}
+.morenai-picto.active .picto-page{transform-box:fill-box;transform-origin:left center;animation:morenai-flip 2.4s ease-in-out infinite}
+.morenai-picto.active .picto-dot{animation:morenai-dot 1.25s ease-in-out infinite}
+.morenai-clarification-title{display:flex;align-items:center;gap:.6rem}
+.morenai-clarification-title .morenai-picto-svg{width:40px;height:40px;margin:0;color:var(--wine)}
+.morenai-clarification-title .picto-check{stroke:var(--gold);stroke-dasharray:100;stroke-dashoffset:100;animation:morenai-draw 2.8s ease-in-out infinite}
+.morenai-clarify-option{display:flex;align-items:center;gap:.45rem;text-align:left}
+.morenai-mini-doc{width:18px;height:18px;flex-shrink:0}
+.morenai-passages-title{display:flex;align-items:center;gap:.5rem}
+.morenai-passages-title .morenai-picto-svg{width:26px;height:26px;margin:0;color:var(--wine)}
+.morenai-passages-title .picto-eye{transform-box:fill-box;transform-origin:center;animation:morenai-blink 3.2s ease-in-out infinite}
+@keyframes morenai-sweep{0%,100%{transform:translate(0,0)}50%{transform:translate(2px,-2px)}}
+@keyframes morenai-flip{0%,100%{transform:scaleX(1)}50%{transform:scaleX(.15)}}
+@keyframes morenai-dot{0%,60%,100%{opacity:.35}30%{opacity:1}}
+@keyframes morenai-draw{0%{stroke-dashoffset:100}40%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:100}}
+@keyframes morenai-blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.08)}}
+@media(prefers-reduced-motion:reduce){.morenai-picto.active .picto-lens,.morenai-picto.active .picto-spark,.morenai-picto.active .picto-page,.morenai-picto.active .picto-dot,.morenai-clarification-title .picto-check,.morenai-passages-title .picto-eye{animation:none}.morenai-clarification-title .picto-check{stroke-dashoffset:0}}
