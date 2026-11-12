@@ -102,9 +102,10 @@ document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)r
 $('printGuide').onclick=()=>{document.querySelectorAll('details').forEach(x=>x.dataset.wasOpen=x.open?'1':'0');document.querySelectorAll('#hallazgos details').forEach(x=>x.open=true);window.print()};window.addEventListener('afterprint',()=>document.querySelectorAll('details[data-was-open]').forEach(x=>{x.open=x.dataset.wasOpen==='1';delete x.dataset.wasOpen}));
 if(location.protocol!=='file:'&&'serviceWorker'in navigator){navigator.serviceWorker.register('./sw.js').then(()=>{$('offlineStatus').textContent='La guía se prepara para consulta sin conexión. Los enlaces a fuentes externas requieren internet.'}).catch(()=>{$('offlineStatus').textContent='Consulta disponible. Los enlaces a las fuentes requieren conexión.'})}else{$('offlineStatus').textContent='La guía y sus datos pueden leerse desde esta carpeta. Las fuentes externas requieren conexión.'}
 
-const SECTION_IDS=['panorama','cronograma','morenai','comparador','operacion','cuentas','asientos','contingencias','hallazgos','biblioteca','repaso','fuentes'];
+const SECTION_IDS=['panorama','cronograma','comparador','operacion','cuentas','asientos','contingencias','hallazgos','biblioteca','repaso','fuentes'];
 let activeSection='panorama';
 function navigateSection(id,update=true,scroll=true){
+ if(id==='morenai')id='panorama';
  if(id==='inicio'||id==='contenido')id='panorama';
  if(!SECTION_IDS.includes(id))return;
  activeSection=id;
