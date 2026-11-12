@@ -45,3 +45,9 @@ body:not([data-section]) main section:not(#panorama){display:none}
 .morenai-thinking-body .morenai-pulse{margin-bottom:.5rem}
 #electoral-chat-panel .morenai-thinking-body{padding:.8rem}
 @media(prefers-reduced-motion:reduce){.morenai-thinking-body .morenai-pulse i{animation:none}}
+/* MorenAI: pregunta de aclaración con opciones (2026-11-12) */
+.morenai-clarification{margin-top:1rem;padding:1rem;border:1px solid var(--gold);border-radius:.8rem;background:#fdf6e3}
+.morenai-clarification p{font-size:.85rem;line-height:1.7}
+.morenai-clarification-options{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}
+.morenai-clarify-option{border:1px solid var(--wine);background:var(--white);color:var(--wine);padding:.6rem .8rem;border-radius:.5rem;font-size:.78rem;font-weight:600;min-height:38px}
+.morenai-clarification-hint{font-size:.72rem!important;color:var(--muted);margin-top:.7rem}
