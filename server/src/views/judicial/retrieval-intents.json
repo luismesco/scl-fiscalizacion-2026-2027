@@ -1,0 +1,403 @@
+{
+  "version": 1,
+  "profiles": [
+    {
+      "id": "vpmrg",
+      "matchAny": [
+        "\\bvpmrg\\b|\\bvpg\\b",
+        "violencia.{0,80}politica|politica.{0,60}violencia"
+      ],
+      "law": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencias",
+      "articles": [
+        "20 bis"
+      ],
+      "terms": [
+        "violencia",
+        "politica",
+        "mujeres",
+        "genero"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "violencia_tipos",
+      "matchAny": [
+        "(?:tipos|clases|modalidades).{0,70}violencia|violencia.{0,70}(?:tipos|clases|modalidades)"
+      ],
+      "law": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencias",
+      "articles": [
+        "6",
+        "5"
+      ],
+      "terms": [
+        "violencia",
+        "tipos"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "violencia",
+      "matchAny": [
+        "violencia.{0,60}(?:genero|mujer)|(?:genero|mujer).{0,60}violencia"
+      ],
+      "law": "Ley General de Acceso de las Mujeres a una Vida Libre de Violencias",
+      "articles": [
+        "5",
+        "6"
+      ],
+      "terms": [
+        "violencia",
+        "mujeres",
+        "genero"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "medios_requisitos",
+      "matchAny": [
+        "(?:requisit|desech|improceden|datos|firma|contener).{0,110}(?:impugn|demanda|recurso|escrito|decision del ine)|(?:impugn|demanda|escrito).{0,110}(?:requisit|desech|datos|firma|contener)",
+        "que debe contener.{0,70}(?:recurr|recurro)"
+      ],
+      "law": "Ley General del Sistema de Medios de Impugnación en Materia Electoral",
+      "articles": [
+        "9",
+        "10"
+      ],
+      "terms": [
+        "requisitos",
+        "demanda",
+        "firma"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "medios_computo",
+      "matchAny": [
+        "(?:sabados|domingos|fines de semana|inhabiles|dias habiles).{0,100}(?:rap|impugn|recurso|electoral|proceso)|(?:rap|impugn|recurso|electoral|proceso).{0,100}(?:sabados|domingos|fines de semana|inhabiles|dias habiles)"
+      ],
+      "law": "Ley General del Sistema de Medios de Impugnación en Materia Electoral",
+      "articles": [
+        "7",
+        "8"
+      ],
+      "terms": [
+        "computo",
+        "dias",
+        "habiles"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "medios_plazo",
+      "matchAny": [
+        "(?:rap\\b|apelacion|apelar|recurrir|recurro|impugnar|impugnacion).{0,120}(?:plazo|dias?|tiempo|fecha|vence|venc|cuando|termino|limite|caduc)|(?:plazo|dias?|tiempo|fecha|vence|venc|cuando|termino|limite|caduc).{0,120}(?:\\brap\\b|apelacion|apelar|recurr|impugn)|(?:multas?|resolucion).{0,80}(?:consejo general|ine).{0,50}(?:plazo|dias)|(?:plazo|dias).{0,80}(?:multas?|resolucion).{0,80}(?:consejo general|ine)"
+      ],
+      "law": "Ley General del Sistema de Medios de Impugnación en Materia Electoral",
+      "articles": [
+        "8",
+        "7"
+      ],
+      "terms": [
+        "apelacion",
+        "plazo",
+        "dias"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "exhaustividad",
+      "matchAny": [
+        "exhaustiv|12\\s*/\\s*2001",
+        "(?:no |sin |omiti|dejaron|dejo|olvido|ignoro).{0,70}(?:estudi|analiz|valor|pronunci|contest|resolv).{0,100}(?:prueba|argument|plante|demanda|agravio|documental|medios? de conviccion)",
+        "(?:prueba|argument|planteamiento).{0,70}(?:sin analizar|sin estudiar|no valorad|no estudiad|omitid)"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "17",
+        "16"
+      ],
+      "terms": [
+        "exhaustividad",
+        "pruebas",
+        "argumentos"
+      ],
+      "criteria": [
+        "12/2001"
+      ],
+      "numerals": []
+    },
+    {
+      "id": "promocion",
+      "matchAny": [
+        "promocion personalizada|12\\s*/\\s*2015",
+        "(?:servidor|servidora|funcionario|funcionaria|presidenta? municipal|alcalde|alcaldesa).{0,110}(?:propaganda|difund|difus|nombre|logros|imagen|voz)",
+        "propaganda gubernamental"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "134"
+      ],
+      "terms": [
+        "propaganda",
+        "personalizada",
+        "servidores"
+      ],
+      "criteria": [
+        "12/2015"
+      ],
+      "numerals": []
+    },
+    {
+      "id": "anticipados",
+      "matchAny": [
+        "actos? anticipad|4\\s*/\\s*2018",
+        "(?:candidato|candidata|candidatura|aspiro|aspirante|gubernatura).{0,100}antes.{0,80}campan|antes.{0,80}campan.{0,100}(?:candidat|votar|aspir)",
+        "aspiro.{0,70}gubernatura|quiero ser candidat.{0,70}antes"
+      ],
+      "law": "Ley General de Instituciones y Procedimientos Electorales",
+      "articles": [
+        "3"
+      ],
+      "terms": [
+        "actos",
+        "anticipados",
+        "campana"
+      ],
+      "criteria": [
+        "4/2018"
+      ],
+      "numerals": []
+    },
+    {
+      "id": "paridad",
+      "matchAny": [
+        "paridad.{0,80}(?:genero|candidat|electoral)|(?:genero|candidat).{0,70}paridad"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "41",
+        "35"
+      ],
+      "terms": [
+        "paridad",
+        "candidaturas"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "motivacion",
+      "matchAny": [
+        "fundar.{0,30}motivar|fundamentacion.{0,30}motivacion|motivar.{0,60}(?:resolucion|acto)|fundamentad.{0,60}motivad"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "16"
+      ],
+      "terms": [
+        "fundamentacion",
+        "motivacion"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "audiencia",
+      "matchAny": [
+        "derecho de audiencia|garantia de audiencia|privar.{0,80}derechos|privarme.{0,80}derechos"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "14"
+      ],
+      "terms": [
+        "audiencia",
+        "formalidades"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "peticion",
+      "matchAny": [
+        "peticion.{0,80}(?:escrita|pacifica|respetuosa)|(?:escrita|respetuosa).{0,80}peticion|derecho de peticion"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "8"
+      ],
+      "terms": [
+        "peticion",
+        "respuesta"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "acta_revision",
+      "matchAny": [
+        "acta de inicio.{0,70}revision|acta.{0,70}(?:utf|fiscaliza|sif)|(?:utf|fiscaliza).{0,70}acta"
+      ],
+      "law": "Reglamento de Fiscalización",
+      "articles": [
+        "296"
+      ],
+      "terms": [
+        "acta",
+        "revision",
+        "firmas"
+      ],
+      "criteria": [],
+      "numerals": [
+        "10"
+      ]
+    },
+    {
+      "id": "registro",
+      "matchAny": [
+        "(?:registr|captur|contabil).{0,80}(?:tiempo real|sif)|tiempo real.{0,80}(?:registr|operaci)|plazo.{0,100}registrar operaciones"
+      ],
+      "law": "Reglamento de Fiscalización",
+      "articles": [
+        "38"
+      ],
+      "terms": [
+        "registro",
+        "tiempo",
+        "real"
+      ],
+      "criteria": [],
+      "numerals": [
+        "1"
+      ]
+    },
+    {
+      "id": "beneficio",
+      "matchAny": [
+        "(?:beneficio|bardas).{0,100}(?:electoral|pague|pago|atribui|utf)|(?:utf|fiscaliza).{0,100}(?:beneficio|bardas)"
+      ],
+      "law": "Reglamento de Fiscalización",
+      "articles": [
+        "32"
+      ],
+      "terms": [
+        "beneficio",
+        "propaganda"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "individualizacion",
+      "matchAny": [
+        "individualiza.{0,60}sancion|(?:sancion|multa).{0,100}(?:porcentaje|ejercicio pasado|anterior|proporcion|gravedad)|(?:porcentaje|gravedad).{0,100}(?:sancion|multa)"
+      ],
+      "law": "Ley General de Instituciones y Procedimientos Electorales",
+      "articles": [
+        "458"
+      ],
+      "terms": [
+        "individualizacion",
+        "sancion",
+        "gravedad"
+      ],
+      "criteria": [],
+      "numerals": [
+        "5"
+      ]
+    },
+    {
+      "id": "objeto_partidista",
+      "matchAny": [
+        "objeto partidista|(?:gasto|recursos).{0,80}(?:fines partidistas|fines del partido)"
+      ],
+      "law": "Ley General de Partidos Políticos",
+      "articles": [
+        "25",
+        "3"
+      ],
+      "terms": [
+        "recursos",
+        "fines",
+        "partidos"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "voto",
+      "matchAny": [
+        "derecho.{0,60}(?:votar|ser votad)"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "35"
+      ],
+      "terms": [
+        "derecho",
+        "votar"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "salud",
+      "matchAny": [
+        "derecho.{0,50}salud"
+      ],
+      "law": "Constitución Política de los Estados Unidos Mexicanos",
+      "articles": [
+        "4"
+      ],
+      "terms": [
+        "derecho",
+        "salud"
+      ],
+      "criteria": [],
+      "numerals": []
+    },
+    {
+      "id": "propaganda",
+      "matchAny": [
+        "propaganda electoral|elementos.{0,70}propaganda"
+      ],
+      "law": "Ley General de Instituciones y Procedimientos Electorales",
+      "articles": [
+        "242",
+        "3"
+      ],
+      "terms": [
+        "propaganda",
+        "electoral"
+      ],
+      "criteria": [
+        "12/2015",
+        "4/2018"
+      ],
+      "numerals": []
+    },
+    {
+      "id": "apelacion",
+      "matchAny": [
+        "\\brap\\b|recurso de apelacion|apelar.{0,80}(?:ine|electoral)|recurrir.{0,80}decision del ine"
+      ],
+      "law": "Ley General del Sistema de Medios de Impugnación en Materia Electoral",
+      "articles": [
+        "40",
+        "3"
+      ],
+      "terms": [
+        "recurso",
+        "apelacion"
+      ],
+      "criteria": [],
+      "numerals": []
+    }
+  ]
+}

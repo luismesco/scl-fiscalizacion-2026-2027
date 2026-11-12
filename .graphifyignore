@@ -8,3 +8,9 @@ graphify-out/
 coverage.js
 
 calendar-data.js
+
+calendario/data/
+calendario/downloads/
+calendario/assets/
+
+server/data/

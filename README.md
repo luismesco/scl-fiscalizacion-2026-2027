@@ -32,3 +32,6 @@ Las guías se consultan completas: 361 filas de operaciones en el adjunto y 496 
 
 
 El apartado Cronograma cruza la implementación del SCL con las 190 actuaciones agrupadas y los dos intervalos sin día individualizado del calendario electoral de referencia. Ofrece calendario mensual, agenda paginada, filtros por entidad y periodo, y fichas con ámbito, cargo, fuente e implicación operativa. Conserva separadas las fechas de fiscalización, las actuaciones jurisdiccionales y la liberación de funcionalidades. Los tres anexos del Acuerdo INE/CG570/2026 pueden consultarse en el visor PDF. Corte: 12 de noviembre de 2026.
+
+
+El calendario completo se encuentra en `calendario/`: conserva datos, evidencias, mapa, filtros, capturas y descargas del repositorio electoral. La guía incorpora una consulta documental MorenAI con citas comprobables, selección de fuentes y contexto normativo electoral. El sitio completo y su servicio de consultas se sirven desde Railway; GitHub Pages conserva la guía y conecta con el mismo servicio. Las credenciales se configuran exclusivamente en el entorno del servicio.
