@@ -29,3 +29,6 @@ El índice contiene 61 temas, cubre los 16 apartados del manual y distingue corr
 La comparación contable abarca los 1,837 códigos de la unión de los dos catálogos y muestra las fichas disponibles en cada versión. La ausencia de un código en un catálogo no se presenta como derogación.
 
 Las guías se consultan completas: 361 filas de operaciones en el adjunto y 496 en el antecedente. La localización por concepto textual es una ayuda de consulta; no certifica equivalencia contable. Se conservan las numeraciones repetidas de las fuentes. Todas las vistas tienen búsqueda y paginación.
+
+
+El apartado Cronograma cruza la implementación del SCL con las 190 actuaciones agrupadas y los dos intervalos sin día individualizado del calendario electoral de referencia. Ofrece calendario mensual, agenda paginada, filtros por entidad y periodo, y fichas con ámbito, cargo, fuente e implicación operativa. Conserva separadas las fechas de fiscalización, las actuaciones jurisdiccionales y la liberación de funcionalidades. Los tres anexos del Acuerdo INE/CG570/2026 pueden consultarse en el visor PDF. Corte: 12 de noviembre de 2026.
