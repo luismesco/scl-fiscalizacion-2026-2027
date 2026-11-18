@@ -11,6 +11,7 @@ COPY . .
 RUN node server/scripts/ingest-faq.mjs \
  && node server/scripts/ingest-text.mjs --text documents/CGex202611-11-VE.txt --doc sesion-cg-20261111-ve --title "Versión estenográfica · Sesión Extraordinaria Urgente del Consejo General · 11 de noviembre de 2026" --pdf-url https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/190925/CGex202611-11-VE.pdf \
  && node server/scripts/ingest-text.mjs --text documents/CGex202609-29-VE.txt --doc sesion-cg-20260929-ve --title "Versión estenográfica · Sesión Extraordinaria del Consejo General · 29 de septiembre de 2026" --pdf-url https://repositoriodocumental.ine.mx/xmlui/bitstream/handle/123456789/190347/CGex202609-29-VE.pdf
+RUN node server/scripts/ingest-training.mjs
 ENV NODE_ENV=production
 EXPOSE 8080
 CMD ["node","server/index.mjs"]

@@ -1,3 +1,6 @@
 graphify-out/
 .DS_Store
 node_modules/
+
+/docs/plans/
+server/data/*.bak-*

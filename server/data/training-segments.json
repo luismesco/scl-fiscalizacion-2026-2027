@@ -1,0 +1,37 @@
+[
+  {
+    "file": "documents/capacitacion/grabacion-00.mp4",
+    "start": 0.0,
+    "end": 909.76
+  },
+  {
+    "file": "documents/capacitacion/grabacion-01.mp4",
+    "start": 909.76,
+    "end": 1824.8
+  },
+  {
+    "file": "documents/capacitacion/grabacion-02.mp4",
+    "start": 1824.8,
+    "end": 2727.56
+  },
+  {
+    "file": "documents/capacitacion/grabacion-03.mp4",
+    "start": 2727.56,
+    "end": 3613.12
+  },
+  {
+    "file": "documents/capacitacion/grabacion-04.mp4",
+    "start": 3613.12,
+    "end": 4516.36
+  },
+  {
+    "file": "documents/capacitacion/grabacion-05.mp4",
+    "start": 4516.36,
+    "end": 5416.36
+  },
+  {
+    "file": "documents/capacitacion/grabacion-06.mp4",
+    "start": 5416.36,
+    "end": 5485.16
+  }
+]

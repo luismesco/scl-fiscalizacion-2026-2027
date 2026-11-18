@@ -35,3 +35,10 @@ El apartado Cronograma cruza la implementación del SCL con las 190 actuaciones 
 
 
 El calendario completo se encuentra en `calendario/`: conserva datos, evidencias, mapa, filtros, capturas y descargas del repositorio electoral. La guía incorpora una consulta documental MorenAI con citas comprobables, selección de fuentes y contexto normativo electoral. El sitio completo y su servicio de consultas se sirven desde Railway; GitHub Pages conserva la guía y conecta con el mismo servicio. Las credenciales se configuran exclusivamente en el entorno del servicio.
+
+
+## Capacitación recibida el 17 de noviembre de 2026
+
+Se incorporan el manual de 139 páginas, la presentación de 70 diapositivas, la grabación completa del 13 de noviembre y ocho demostraciones sin narración. El recorrido operativo contiene 13 fichas con requisitos, perfil, secuencia, resultado esperado y fuentes. Se conserva el recorrido anterior de 174 páginas y una correspondencia temática entre los índices, sin certificar equivalencia funcional. El repaso incluye cinco casos adicionales.
+
+La consulta documental incorpora 720 fragmentos del paquete recibido. Las transcripciones y lecturas de imagen se identifican como provisionales y se consultan junto al original. La actualización de la guía al 18 de noviembre no modifica las fechas ni el estado de las fuentes normativas.

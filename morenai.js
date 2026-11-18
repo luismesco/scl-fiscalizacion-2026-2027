@@ -25,9 +25,10 @@ function morenaiContext(){
   if(title)ctx.docTitle=title;
   if(state)ctx.docState=state;
   const sel=$('pdfDocumentSelect');
+  if(dlg?.open&&document.querySelector('.training-route')){ctx.doc='manual-capacitacion';ctx.docTitle='Manual SCL · material recibido el 17 de noviembre';ctx.viewer='text';return ctx}
   if(dlg&&dlg.open&&sel&&sel.value){ctx.doc=sel.value;ctx.page=Number($('pdfPageInput')?.value)||1;ctx.viewer='pdf'}
-  else if(typeof reader!=='undefined'&&reader&&reader.id){ctx.doc=reader.id;ctx.page=(reader.page||0)+1;ctx.viewer='text';if(reader.query)ctx.readerQuery=reader.query}
-  else if(typeof pdfCurrentId!=='undefined'&&pdfCurrentId){ctx.doc=pdfCurrentId;ctx.page=(typeof pdfPageNumber!=='undefined'&&pdfPageNumber)||1;ctx.viewer='pdf'}
+  else if(dlg&&dlg.open&&typeof reader!=='undefined'&&reader&&reader.id){ctx.doc=reader.id;ctx.page=(reader.page||0)+1;ctx.viewer='text';if(reader.query)ctx.readerQuery=reader.query}
+  else if(dlg&&dlg.open&&typeof pdfCurrentId!=='undefined'&&pdfCurrentId){ctx.doc=pdfCurrentId;ctx.page=(typeof pdfPageNumber!=='undefined'&&pdfPageNumber)||1;ctx.viewer='pdf'}
  }catch(e){}
  return ctx;
 }
@@ -38,7 +39,7 @@ const MORENAI_PICTO_CONSULT=`<svg class="morenai-picto-svg" viewBox="0 0 48 48" 
 const MORENAI_PICTO_CHOOSE=`<svg class="morenai-picto-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5h15l8 8v28a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M28 5v8h8"/><line x1="17" y1="17" x2="27" y2="17"/><line x1="17" y1="22" x2="24" y2="22"/><path class="picto-check" d="M16 31l5 5 10-12"/></svg>`;
 const MORENAI_PICTO_PREVIEW=`<svg class="morenai-picto-svg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g class="picto-eye"><path d="M5 24c6-9 12-11 19-11s13 2 19 11c-6 9-12 11-19 11S11 33 5 24z"/><circle cx="24" cy="24" r="5"/></g></svg>`;
 const MORENAI_PICTO_DOC=`<svg class="morenai-mini-doc" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 5h15l8 8v28a2 2 0 0 1-2 2H13a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/><path d="M28 5v8h8"/><line x1="17" y1="17" x2="27" y2="17"/><line x1="17" y1="22" x2="24" y2="22"/></svg>`;
-const MORENAI_VERSION=15;
+const MORENAI_VERSION=18;
 (function morenaiVersionCheck(){try{const st=$('morenaiStatus');if(st&&!document.querySelector('.morenai-version')){const v=document.createElement('span');v.className='morenai-version';v.textContent='v'+MORENAI_VERSION;st.after(v)}fetch(location.href,{cache:'no-store'}).then(r=>r.text()).then(html=>{const m=html.match(/morenai\.js\?v=(\d+)/);if(m&&Number(m[1])!==MORENAI_VERSION&&!sessionStorage.getItem('morenai-reloaded-'+m[1])){sessionStorage.setItem('morenai-reloaded-'+m[1],'1');location.reload()}}).catch(()=>{})}catch(e){}})();
 let morenaiThinkingTimer=null;
 function showMorenaiThinking(question){$('morenaiAnswer').innerHTML=`<article class="morenai-result morenai-thinking"><p class="eyebrow">Consulta en curso</p><h3 class="morenai-user-message">${esc(question)}</h3><div class="morenai-thinking-body"><div class="morenai-pictos"><figure class="morenai-picto active">${MORENAI_PICTO_SEARCH}<figcaption>Buscar</figcaption></figure><figure class="morenai-picto">${MORENAI_PICTO_READ}<figcaption>Leer</figcaption></figure><figure class="morenai-picto">${MORENAI_PICTO_CONSULT}<figcaption>Consultar</figcaption></figure></div><p class="morenai-thinking-label"><strong>Buscando en los documentos…</strong></p><ul><li>Buscando pasajes en los documentos del SCL.</li><li>Consultando el acervo normativo electoral.</li><li>Verificando las citas antes de responder.</li></ul></div></article>`;clearInterval(morenaiThinkingTimer);const steps=[...document.querySelectorAll('.morenai-picto')];const labels=['Buscando en los documentos…','Leyendo los pasajes…','Consultando y verificando las citas…'];let step=0;morenaiThinkingTimer=setInterval(()=>{step=(step+1)%steps.length;steps.forEach((s,i)=>s.classList.toggle('active',i===step));const l=document.querySelector('.morenai-thinking-label');if(l)l.innerHTML=`<strong>${labels[step]}</strong>`},1400)}
